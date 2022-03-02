@@ -123,17 +123,22 @@ body {
     color: $DarkGrayishBlue;
     padding: 15px 10px;
 
-    &--special {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      background-color: white;
-      border-radius: 30px;
+    &:hover {
+      cursor: pointer;
+      color: #333;
+    }
 
+    &--special {
+      display: block;
+      margin: 20px 0;
+      padding: 15px;
+      background-color: $yellow;
+      color: black;
+      border-radius: 30px;
       font-family: $fontFraunces;
 
       &:hover {
-        background-color: $yellow;
+        background-color: #76cffc;
         color: white;
       }
     }
@@ -157,16 +162,16 @@ body {
     &__list {
       flex-direction: row;
       top: -80px;
-
       background-color: transparent;
     }
+
     &__element {
       color: white;
-      padding: 0 20px;
 
       &--special {
-        margin-left: 30px;
+        margin-left: 20px;
         margin-right: 20px;
+        padding: 10px 20px;
         color: black;
       }
     }
@@ -400,6 +405,11 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     color: $desaturatedCyan;
+
+    &:hover {
+      cursor: pointer;
+      color: #eee;
+    }
   }
 
   &__icon {
@@ -412,5 +422,10 @@ body {
   &__icons {
     padding-left: 10px;
     padding-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(20);
+    }
   }
 }
